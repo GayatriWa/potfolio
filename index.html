@@ -12,18 +12,21 @@
         <div class="container">
             <nav>
                 <div class="logo"><h2>Gayatri</h2></div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#potfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="ri-close-fill" onclick="closemenu()"></i>
 
                 </ul>
+                <i class="ri-menu-line" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi,I'm<span>Gayatri</span> Wankhade<br> from Amravati</h1>
+                <h2>Hello,</h2>
+                <h1>I'm <span>Gayatri</span> Wankhade</h1>
+                <p>Front End Developer</p>
             </div>
         </div>
     </div>
@@ -39,7 +42,10 @@
                 <div class="about-col-2">
 
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat sequi quidem dolor eveniet facilis voluptatum voluptate consectetur tempore minus odio eligendi earum tempora commodi reprehenderit distinctio, magni blanditiis aliquam hic cumque sunt aut ullam. Error eaque nam alias quasi amet itaque officia, voluptatum nemo labore libero quam. Vel, earum.</p>
+                    <p class="para">9+ months of experience as a front-End Developer. Proficient in HTML5, CSS3, JavaScript, 
+                        Angular, GSAP and SQL. Strong problem solving skill and a passion for delivering exceptional 
+                        user experience. Seeking a challenging role to contribute my expertise to innovative web 
+                        development project.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links"onclick="opentab('experience')">Experience</p>
@@ -47,20 +53,29 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Technology</span><br>HTML, CSS, JavaScript, TypeScript, Bootstrap</li>
+                            <li><span>Framework</span><br>Angular 10+</li>
+                            <li><span>Animation Library</span><br>Gsap with JavaScript</li>
+                            <li><span>Database</span><br>SQL Server</li>
+                            <li><span>Other Tools</span><br>Git, Visual Studio Code</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>one year</span><br>Kpit</li>
+                            <li><span>Trainee Engineer - KPIT Technology(Pune)</span><br>Nov 2021 – July 2022<br><br>
+                                Collaborated with cross-functional teams to design and develop interactive web 
+                                application using angular.<br>
+                                Implemented responsive web designs with HTML5, CSS3, and JavaScript to enhance 
+                                user experience.<br>
+                                Utilized GSAP for smooth animations and transitions, enhancing the visual appeal of 
+                                web pages.
+                                </li>
                            
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>BE in Information Technology</span><br>Designing Web/App interfaces</li>
+                            <li><span>BE in Information Technology </span><br>Sant Gadge Baba Amravati University Amravati, Maharashtra</li>
                         </ul>
                     </div>
        
@@ -71,7 +86,7 @@
     <!-- --------------------------------services-------------------------------------------- -->
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My services</h1>
+            <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="ri-code-s-slash-line"></i>
@@ -101,7 +116,7 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="personal-portfolio-img/images/work-1.png" alt="">
+                    <img src="personal-portfolio-img/images/Work1.png" alt="">
                     <div class="layer">
                         <h3>Social Media App</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, illum! sit amet consectetur</p>
@@ -109,7 +124,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="personal-portfolio-img/images/work-2.png" alt="">
+                    <img src="personal-portfolio-img/images/Work1.png" alt="">
                     <div class="layer">
                         <h3>Social Media App</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, illum! sit amet consectetur</p>
@@ -117,7 +132,15 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="personal-portfolio-img/images/work-3.png" alt="">
+                    <img src="personal-portfolio-img/images/Work1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, illum! sit amet consectetur</p>
+                        <a href="#"><i class="ri-external-link-line"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="personal-portfolio-img/images/Work1.png" alt="">
                     <div class="layer">
                         <h3>Social Media App</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, illum! sit amet consectetur</p>
@@ -126,6 +149,34 @@
                 </div>
             </div>
             <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!-- ----------------------------------------contact------------------------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="ri-send-plane-fill"></i>Contact@example.com</p>
+                    <p><i class="ri-phone-fill"></i>779459485948</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
+                    <a href="personal-portfolio-img/images/GayatriWankhade-WebDevloper.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
         </div>
     </div>
             
