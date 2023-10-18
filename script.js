@@ -35,3 +35,36 @@ function closemenu(){
         )
       .catch(error => console.error('Error!', error.message))
   })
+
+  var tl = gsap.timeline();
+  tl
+    .from(".logo h2",{
+      y:-80,
+      opacity:0,
+      duration:0.5,
+      stagger:0.3
+  })
+    .from("#sidemenu a",{
+      y:-80,
+      opacity:0,
+      duration:0.5,
+      ease: "power2.inOut",
+      stagger:0.3
+  })
+    .from(".header-text h2, .header-text h1, .header-text p",{
+        x:-200,
+        opacity:0,
+        duration:0.5,
+        stagger:0.5
+    })
+  //   .from(".about-col-1 img",{
+  //     scale:0.5,
+  //     opacity:0,
+  //     duration:0.5,
+  //     scrollTrigger:{
+  //       trigger:".about-col-1 img",
+  //       scroller:"body",
+  //       markers:true,
+  //       start:"top 10%"
+  //     }
+  // })
